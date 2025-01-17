@@ -1,0 +1,82 @@
+
+
+.about{
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    justify-content: center;
+    background-color: #302e32;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-auto-columns: 3fr 2fr;
+    grid-auto-flow: column;
+}
+
+
+
+.about .text{
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.about h2{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: clamp(18px, 3.5vw, 100px); /* Adjust min, preferred, and max values as needed */
+}
+
+.about p {
+    font-size: clamp(13px, 1.6vw, 40px); /* Adjust min, preferred, and max values as needed */
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+
+.about .image {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Changed from center to start */
+  min-height: 0; /* Prevents the container from forcing its children to stretch */
+  overflow: hidden;
+}
+
+.about .image img {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+
+  .about{
+    grid-auto-columns: 1fr 2fr;
+    margin-top: 125px;
+  }
+
+  .about .image img {
+    width: 100%; /* Keep the image responsive to the container's width */
+    max-width: 100%; /* Prevent the image from exceeding the width of its container */
+    min-height: 700px; /* Set a minimum height to make the image taller */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the frame fully, cropping the image if necessary */
+    object-position:27%;
+    border-radius: 15px 0 0 15px; /* Maintain rounded corners on the right side */
+}
+
+  .about .text {
+    order: 2; /* Move text to the second position */
+  }
+
+  .about .image {
+    order: 1; /* Move image to the first position */
+  }
+}
+

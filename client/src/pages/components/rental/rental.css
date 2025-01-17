@@ -1,0 +1,42 @@
+
+
+.rental-grid {
+    margin-top: 12vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center children horizontally */
+}
+
+.bike-info{
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Adjust as needed for spacing between items */
+    margin-bottom: 20px; /* Space between each rental item */
+    width: 900px;
+    margin-left: auto; /* Center the item horizontally */
+    margin-right: auto; /* Center the item horizontally */
+}
+
+.view-btn {
+    margin-left: auto;
+    padding: 4px 8px; /* Small padding around the text */
+    background-color: #007bff; /* Example button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    justify-content: center;
+}
+
+.view-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.bike-rental-image {
+    width: 150px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 5px;
+    object-fit: cover; /* Ensure the aspect ratio is maintained without distorting the image */
+}

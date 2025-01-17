@@ -1,0 +1,297 @@
+.navbar {
+  position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302E32;
+    color: white;
+    z-index: 10;
+  }
+ 
+  
+
+.navbar h2{
+    margin-left: 50px; /* Adjust this value to move the h2 more to the right */
+
+}
+
+  .navbar-left, .navbar-right {
+    position: relative; /* Add position to ensure z-index is respected */
+    z-index: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-center {
+    flex-grow: 1; /* Makes the search bar center stretch */
+    text-align: center; /* Centers the search bar text */
+
+  }
+  
+.navbar-center form {
+  width: 50%;
+}
+
+  .navbar-center input {
+    width: 100%; /* Adjust based on preference */
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #737373;
+    outline: none;
+    border: 1px solid black;
+    color: #FFFFFf;
+  }
+
+  
+
+  .navbar-center input, button {
+    font-size: 18px; /* Sets the text size larger and the same for both elements */
+  }
+
+.navbar-center input::placeholder {
+  color: #FFFFFF; /* Sets placeholder text color to white */
+}
+  
+  .navbar button {
+    margin-left: 10px; /* Space between buttons */
+    background-color: #737373;
+  }
+
+  .navactions {
+    margin-left: 10px; /* Space between buttons */
+    background-color: #737373; /* New background color */
+    color: white; /* Text color */
+    border: 1px solid black; /* Add border */
+    padding: 7px 20px; /* Padding for larger click area and better aesthetics */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navactions:hover {
+    background-color: #686868; /* Darker shade on hover */
+  }
+
+  .navbutton {
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 45px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    min-width: 30px;
+    background-color: #302E32 !important;
+}
+
+.logged{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 37px;
+}
+
+.navbutton .bar, .navbutton:after, .navbutton:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.navbutton.is-active:before{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.navbutton.is-active .bar{
+    opacity: 0;
+}
+
+.navbutton.is-active:after{
+    transform: rotate(45deg) translate(-9px, -7px);
+}
+
+.side-menu {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: -100%;
+  width: 25vh;
+  height: 50vh;
+  background-color: #ffffff;
+  z-index: 1;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+
+input:focus {
+  outline: none;
+}
+
+ 
+.side-menu h2{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+
+}
+
+.side-menu.active{
+  top: 0;
+transition: all 0.3s ;
+}
+
+.account-menu {
+  color: #302E32;
+  position: absolute; /* Adjust based on your layout */
+  top: 54px; /* Adjust the position */
+  right: -100%; /* For a right-aligned menu */
+  width: 240px; /* Adjust based on content */
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.account-menu h2{
+  margin-left: 0;
+  text-align: center;
+}
+
+.account-menu .account-buttons{
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  background-color: #ececec;
+  border: none;
+}
+
+.account-menu .account-buttons:hover{
+  background-color: #e0e0e0;
+}
+
+.account-menu.active {
+  right: 0%;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.predictions-list-nav {
+  position: absolute;
+  width: 50%;
+  margin-top: -5px; /* Space between input and list */
+  padding: 0;
+  
+  list-style-type: none;
+  background-color: #fff;
+  color: #302E32;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  right:125px;
+}
+
+.predictions-list-nav.not-visible{
+  display: none;
+}
+
+.predictions-list-nav li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.predictions-list-nav li:hover {
+  background-color: #f9f9f9;
+}
+
+
+@media (max-width: 1100px) {
+
+  .navbar, .navbar-left, .navbar-right {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-right{
+    justify-content: right;
+    padding-right: 10px;
+    width: 30px;
+  }
+
+  .navbar-left {
+    justify-content: left;
+  }
+
+  .navbutton {
+    z-index: 100;
+    width: 60px;
+  }
+
+ 
+
+  .navbar-center{
+    display: none;
+    padding: 0;
+    
+  }
+  .list{
+    display: none;
+  }
+
+  .navbutton {
+    z-index: 100;
+  }
+  .side-menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #737373;
+    z-index: 1;
+    align-items: center;
+    
+    
+  }
+  
+  .account-menu {
+  display: none;}
+   
+  .side-menu h2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  
+  }
+  
+  .side-menu.active{
+    left: 0;
+  transition: left 0.3s ;
+  }
+}
+
+@media (max-width: 375px) {
+.navbar-left h2 {
+  font-size: 5vw;
+}
+}

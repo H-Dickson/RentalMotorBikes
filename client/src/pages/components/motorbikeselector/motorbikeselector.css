@@ -1,0 +1,31 @@
+select {
+    width: 100%; /* Makes the select element fill its container */
+    padding: 8px 12px; /* Adds some padding inside the select box */
+    margin-top: 5px; /* Adds some space above the select box */
+    margin-bottom: 5px; /* Adds some space below the select box */
+    border: 1px solid #ccc; /* Sets the border color */
+    border-radius: 4px; /* Rounds the corners of the select box */
+    background-color: white; /* Sets the background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+    font-size: 16px; /* Sets the font size */
+    color: #333; /* Sets the text color */
+  }
+  
+  /* Styles for the labels */
+  label {
+    display: block; /* Makes the label take up the full width, ensuring the text is above the select box */
+    margin-top: 10px; /* Adds space above the label */
+    margin-bottom: 5px; /* Adds a little space between the label and the select box it refers to */
+    font-size: 14px; /* Sets the font size */
+    color: #666; /* Sets the font color */
+    font-weight: bold; /* Makes the label text bold */
+  }
+  
+  /* Additional styling for the container of the selectors for better spacing and alignment */
+  .selector-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light grey background for the section */
+    border-radius: 5px; /* Rounds the corners of the section */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow to the section */
+  }

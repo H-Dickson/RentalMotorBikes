@@ -1,0 +1,96 @@
+.user-rentals{
+    margin-top: 10vh;
+}
+
+.user-rentals-header{
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make the header text bold */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 30px; /* Add some space below the header */
+    color: #333; /* Dark grey text color, adjust as needed */
+}
+
+
+.user-rentals-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center children horizontally */
+    min-height: 60vh;
+}
+
+.user-rentals-display {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Adjust as needed for spacing between items */
+    margin-bottom: 20px; /* Space between each rental item */
+    width: 900px;
+    margin-left: auto; /* Center the item horizontally */
+    margin-right: auto; /* Center the item horizontally */
+}
+
+.user-rental-image {
+    width: 150px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 5px;
+    object-fit: cover; /* Ensure the aspect ratio is maintained without distorting the image */
+}
+
+.user-view-btn {
+    margin-left: auto; /* Pushes the button to the right */
+    padding: 5px 10px; /* Adjust padding as needed */
+}
+
+/* Additional styling for the text to ensure it aligns properly next to the image */
+.user-rentals-display > div {
+    flex-grow: 1;
+}
+
+.user-view-btn {
+    margin-left: auto; /* Pushes the button to the right */
+    padding: 10px 15px; /* Slightly larger padding for a bigger button */
+    background-color: #007bff; /* Bootstrap primary blue, adjust as needed */
+    color: white; /* White text color */
+    border: 2px solid #007bff; /* Solid border, same color as background */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Optional: makes the button text bold */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.user-view-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover, adjust as needed */
+    border-color: #004085; /* Optional: change border color on hover for more depth */
+}
+
+.line{
+    width: 1000px;
+}
+
+/* For active option */
+.active-option {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 15px; /* Spacing between options */
+    color: #007bff; /* Bootstrap primary blue, adjust as needed */
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* Additional styling for all option spans */
+.user-rentals-options span {
+    cursor: pointer;
+    margin-right: 15px; /* Consistent spacing between options */
+    transition: color 0.3s; /* Smooth color transition for hover effect */
+    padding: 5px 0; /* Padding for better clickability */
+}
+
+.user-rentals-options span:hover {
+    color: #0056b3; /* Darker blue on hover, adjust as needed */
+}
+
+/* Adjust the .line class if necessary for consistency */
+.line {
+    width: 100%; /* Use 100% width for responsiveness */
+    margin-top: 10px; /* Add some space above the line */
+    border-bottom: 1px solid #ccc; /* Light grey line */
+}

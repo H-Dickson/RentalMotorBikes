@@ -1,0 +1,132 @@
+.map-page {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; Ensure full viewport height */
+}
+
+.map-container {
+  margin-top: 5vh;
+  height: 50vh; /* Adjust height as needed */
+  background-color: lightgray; /* Example background color */
+  position: fixed;
+  width: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0; /* Ensure it stays above other content */
+  
+}
+
+.sidebikes {
+  min-height: 90vh;
+  background-color: rgb(255, 255, 255);
+  /* margin-bottom: 50vh; */
+  margin-left: calc(50vw + 20px); 
+  /* 50vw + 20px ensures it starts after the map container with some padding */
+  /* padding: 20px; Example padding */
+  
+  z-index: 5;
+}
+
+
+.bike-tile .bikegrid .alignright{
+  text-align: right;
+}
+
+.map {
+  z-index: 0; /* Keeps the map behind everything else */
+}
+
+div.popup-bike{
+  cursor: pointer;
+}
+
+.leaflet-container {
+  height: 100vh;
+}
+
+div.leaflet-popup-content{
+  margin: 0;
+  width: 300px !important;
+}
+
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{
+  left: -129px !important;
+}
+
+div.leaflet-popup-content span.alignright {
+  display: block; /* Ensures the span behaves like a block element */
+  text-align: right; /* Aligns text to the right */
+}
+
+.leaflet-popup-content div h3 {
+  margin: 0 2px 5px 2px;
+}
+
+p.bikegrid{
+  margin: 0 2px 5px 2px;
+  
+}
+
+.bikegrid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 0 0 2px;
+  
+}
+
+.leaflet-popup img{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+
+
+.map {
+  z-index: 0; /* Keeps the map behind everything else */
+}
+
+div.popup-bike{
+  cursor: pointer;
+}
+
+.leaflet-container {
+  height: 100vh;
+}
+
+div.leaflet-popup-content{
+  margin: 0;
+  width: 300px !important;
+}
+
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{
+  left: -129px !important;
+}
+
+div.leaflet-popup-content span.alignright {
+  display: block; /* Ensures the span behaves like a block element */
+  text-align: right; /* Aligns text to the right */
+}
+
+.leaflet-popup-content div h3 {
+  margin: 0 2px 5px 2px;
+}
+
+p.bikegrid{
+  margin: 0 2px 5px 2px;
+  
+}
+
+.bikegrid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 0 0 2px;
+  
+}
+
+.leaflet-popup img{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+

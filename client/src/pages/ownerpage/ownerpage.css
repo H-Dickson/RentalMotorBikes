@@ -1,0 +1,44 @@
+.owner-page{
+    margin-top: 10vh;
+    min-height: 63vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.owner-bikes {
+    display: grid;
+    
+    width: 500px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.bike{
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bike-owner-image {
+    width: 100%; 
+    height: auto;
+    aspect-ratio: 10/6;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bike-info {
+    text-align: right; /* Aligns text to the right */
+    padding: 10px;
+    margin: auto;
+}
+
+.bike-model, .bike-year {
+    margin: 0;
+    padding: 5px 0;
+}

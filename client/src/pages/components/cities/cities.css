@@ -1,0 +1,54 @@
+.cities-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cities h1 {
+
+    font-size: 30px;
+    margin-left: 30px; 
+}
+.city-tile {
+    text-align: left;
+    font-size: 19px;
+    width: 12%; /* Adjust for spacing */
+    min-width: 120px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin: 30px 30px;
+    color: black;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.city-tile:hover{
+    transform: scale(1.10); /* Adjust the scale as needed */
+  
+  }
+
+.city-tile img {
+    width: 100%; /* Make the image's width fill the .city-tile container */
+    height: auto; /* Auto-adjust the height based on the width to maintain aspect ratio */
+    aspect-ratio: 4 / 5; /* Corrected comment to match the ratio */
+    object-fit: cover; /* Cover the frame fully, cropping the image if necessary */
+    border-radius: 15px;
+}
+
+.city-tile p {
+    margin: 0;
+}
+
+@media (max-width: 1300px) {
+    .city-tile {
+       width: 23%;
+
+    }
+}
+
+@media (max-width: 596px) {
+    .city-tile {
+       width: 33%;
+        margin: 10px;
+    }
+}

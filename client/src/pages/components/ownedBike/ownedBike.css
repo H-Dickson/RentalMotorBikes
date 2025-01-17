@@ -1,0 +1,33 @@
+.owned-bike {
+    
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10vh;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+.owned-bike ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.owned-bike ul ul {
+    padding-left: 20px;
+}
+
+.owned-bike li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.owned-bike li:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,74 @@
+.account {
+    
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10vh;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item-container button {
+    padding: 5px 10px;
+    margin-left: 10px; /* Ensures a little space between the text and the button */
+    color: #007bff;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.list-item-container button:hover {
+    background-color: #98caff; /* Darker shade of blue on hover */
+}
+
+.account h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.account ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account ul ul {
+    padding-left: 20px;
+}
+
+.account li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.account li:last-child {
+    margin-bottom: 0;
+}
+
+/* Add this to your account.css file */
+
+.list-item-container input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.list-item-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}

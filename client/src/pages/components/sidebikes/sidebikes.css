@@ -1,0 +1,39 @@
+.side-bikes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 25vw);
+    grid-gap: 20px;
+
+}
+
+.bike-tile{
+    z-index: 2;
+    background-color: rgb(233, 233, 233);
+    margin: 10px;
+    border-radius: 5px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.bike-tile img{
+    width: 100%; /* Make the image's width fill the .city-tile container */
+    height: auto; /* Auto-adjust the height based on the width to maintain aspect ratio */
+    aspect-ratio: 4 / 3; /* Corrected comment to match the ratio */
+    object-fit: cover; /* Cover the frame fully, cropping the image if necessary */
+    border-radius: 10px 10px 0 0;
+}
+
+.bike-tile h2{
+    margin: 0 0 5px 5px;
+}
+
+.bike-tile p{
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.no-bikes{
+    margin-top: 30px;
+    display:block;
+    text-align: center;
+}
